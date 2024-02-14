@@ -11,7 +11,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <script
+          src="https://kit.fontawesome.com/191f0bfef4.js"
+          crossorigin="anonymous"
+          async
+        ></script>
+      </body>
     </html>
   );
 }
