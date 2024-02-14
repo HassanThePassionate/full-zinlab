@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Slider from "./components/Slider";
 
-const page = () => {
+const Page = () => {
   const [mode, setMode] = useState("light");
   const [textmode, setTextMode] = useState("tdark");
   const [Fmode, setFMode] = useState("flight");
@@ -34,4 +34,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
