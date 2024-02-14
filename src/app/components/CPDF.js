@@ -71,6 +71,7 @@ const CPDF = (props) => {
           <div className="cards">
             {cards.map((card, index) => (
               <div
+                key={index}
                 className={`card  ${props.mode === "dark" ? "dark" : "light"} `}
               >
                 <i class="fa-regular fa-bookmark book"></i>
