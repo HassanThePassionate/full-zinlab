@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import Form from "./Form";
 
 const Navbar = (props) => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -18,29 +19,8 @@ const Navbar = (props) => {
     document.getElementsByClassName("searchings")[0].style.display = "flex";
     document.querySelector("header").style.display = "none";
   };
-  const showall = () => {
-    document.querySelector("header").style.display = "grid";
-    document.getElementsByClassName("searchings")[0].style.display = "none";
-    document.getElementById("glass").style.display = "inline-block";
-  };
   return (
     <>
-      <div className="container">
-        <form>
-          <div className="search-bars">
-            <div className="searchings">
-              <input
-                type="text"
-                name="search"
-                className="search"
-                placeholder="Search for Movie, TV Shows, Themes & Cast"
-              />
-              <p onClick={showall}>Cancel</p>
-            </div>
-          </div>
-        </form>
-      </div>
-
       <header
         className={`header ${props.Fmode === "fdark" ? "fdark" : "flight"}`}
       >
@@ -52,21 +32,7 @@ const Navbar = (props) => {
                 <span>ZinTools</span>
               </div>
 
-              <form>
-                <div className="search-bar">
-                  <div className="searching">
-                    <input
-                      type="text"
-                      name="search"
-                      className="search"
-                      placeholder="Search for Movie, TV Shows, Themes & Cast"
-                    />
-                    <div type="submit" className="search-button">
-                      <i className="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                  </div>
-                </div>
-              </form>
+              <Form />
 
               <div className="btns">
                 <button className="btn bg-light bs">Log in</button>

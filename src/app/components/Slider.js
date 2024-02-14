@@ -82,11 +82,13 @@ const Slider = (props) => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
-        setSlidesPerView(1);
+        setSlidesPerView(2);
       } else if (window.innerWidth < 992) {
         setSlidesPerView(3);
       } else if (window.innerWidth < 1200) {
         setSlidesPerView(4);
+      } else if (window.innerWidth <= 500) {
+        setSlidesPerView(1);
       } else {
         setSlidesPerView(5);
       }

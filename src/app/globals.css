@@ -148,7 +148,6 @@ h6 {
   max-width: 1425px;
   width: 100%;
   padding: 0 1.3rem;
-  overflow: hidden;
 }
 
 header {
@@ -590,6 +589,12 @@ header {
   .search-bar {
     display: none;
   }
+  .suggestions {
+    display: none;
+  }
+  .suggestion {
+    display: none;
+  }
   .btns {
     display: none;
   }
@@ -753,4 +758,57 @@ header {
   .converter {
     padding-top: 1rem;
   }
+}
+form {
+  position: relative;
+}
+.suggestion {
+  position: absolute;
+  top: 100%;
+  margin-top: 1rem;
+  left: 0;
+  overflow-y: auto;
+  height: 30rem;
+  width: 30rem;
+  background-color: #444;
+  color: #fff;
+  z-index: 5555;
+  border-radius: 10px;
+  display: none;
+}
+.suggestions {
+  position: absolute;
+  top: 100%;
+  margin-top: 1rem;
+  left: 0;
+  overflow-y: auto;
+  height: 30rem;
+  width: 30rem;
+  background-color: #444;
+  color: #fff;
+  z-index: 5555;
+  border-radius: 10px;
+  display: none;
+}
+.flex-box {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 0.5rem;
+  padding: 1rem 0.3rem;
+  cursor: pointer;
+}
+.flex-box:hover {
+  background-color: #f2f3f4;
+  color: #000;
+}
+hr {
+  margin: 1rem 0;
+}
+.top-text {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  padding: 10px 4px;
+  font-weight: 700;
 }

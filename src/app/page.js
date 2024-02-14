@@ -5,6 +5,7 @@ import Converter from "./components/Converter";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Slider from "./components/Slider";
+import Search from "./components/Search";
 
 const Page = () => {
   const [mode, setMode] = useState("light");
@@ -25,6 +26,7 @@ const Page = () => {
   };
   return (
     <>
+      <Search />
       <Navbar Fmode={Fmode} textmode={textmode} />
       <Slider mode={mode} textmode={textmode} />
       <Converter mode={mode} textmode={textmode} />
