@@ -7,6 +7,9 @@ const Search = () => {
     document.getElementsByClassName("suggestions")[0].style.display =
       "inline-block";
   };
+  const handle = () => {
+    document.getElementsByClassName("suggestion")[0].style.display = "none";
+  };
   const sugg = [
     {
       title: "PDF to Word",
@@ -88,7 +91,10 @@ const Search = () => {
             </div>
           </div>
           <div className="suggestions">
-            <div className="top-text">KeyWords</div>
+            <div className="iconsss">
+              <div className="top-text">KeyWords</div>
+              <i className="fa-solid fa-x" id="crosss" onClick={handle}></i>
+            </div>
             <hr />
             <div className="sugg">
               {sugg.map((elm) => {

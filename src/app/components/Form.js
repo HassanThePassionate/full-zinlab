@@ -86,7 +86,10 @@ const Form = () => {
           </div>
         </div>
         <div className="suggestion">
-          <div className="top-text">KeyWords</div>
+          <div className="iconsss">
+            <div className="top-text">KeyWords</div>
+            <i className="fa-solid fa-x" id="crosss" onClick={handle}></i>
+          </div>
           <hr />
           <div className="sugg">
             {sugg.map((elm) => {
