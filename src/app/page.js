@@ -28,7 +28,7 @@ const Page = () => {
       <Navbar Fmode={Fmode} textmode={textmode} />
       <Slider mode={mode} textmode={textmode} />
       <Converter mode={mode} textmode={textmode} />
-      <CPDF mode={mode} />
+      <CPDF mode={mode} textmode={textmode} />
       <Footer mode={mode} toggle={toggle} Fmode={Fmode} />
     </>
   );

@@ -319,7 +319,7 @@ header {
 }
 /* Slider  */
 .converter {
-  padding-top: 3rem 0;
+  margin-top: 3rem;
 }
 
 .other {
@@ -585,6 +585,7 @@ header {
   border-radius: 50%;
   font-size: 20px;
 }
+
 @media screen and (max-width: 1024px) {
   .search-bar {
     display: none;
